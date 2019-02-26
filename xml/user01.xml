@@ -2,25 +2,27 @@
 
 <user>
 	<name>Shinji</name>
-	
-	<track>
-		<artist>Adriatique</artist>
-		<remixArtist></remixArtist>
-		<title>Dawning (Original Mix)</title>
-		<release>Nude</release>
-		<label>Afterlife Records</label>
-		<style>Melodic Techno</style>
-		<albumArtwork>images/release_artwork/nude.jpg</albumArtwork>
-	</track>
 
-	<track>
-		<artist>Marc Grabber, Unique (CRO)</artist>
-		<remixArtist></remixArtist>
-		<title> Longitude (Original Mix)</title>
-		<release>Endless Escape</release>
-		<label>DnC Limited</label>
-		<style>Techno</style>
-		<albumArtwork>images/release_artwork/endless-escape.jpg</albumArtwork>
-	</track>
+	<!-- <trackslist> -->
+		<track>
+			<artist>Adriatique</artist>
+			<remixArtist></remixArtist>
+			<title>Dawning (Original Mix)</title>
+			<release>Nude</release>
+			<label>Afterlife Records</label>
+			<style>Melodic Techno</style>
+			<albumArtwork>images/release_artwork/nude.jpg</albumArtwork>
+		</track>
+
+		<track>
+			<artist>Marc Grabber, Unique (CRO)</artist>
+			<remixArtist></remixArtist>
+			<title> Longitude (Original Mix)</title>
+			<release>Endless Escape</release>
+			<label>DnC Limited</label>
+			<style>Techno</style>
+			<albumArtwork>images/release_artwork/endless-escape.jpg</albumArtwork>
+		</track>
+	<!-- </trackslist> -->
 
 </user>
