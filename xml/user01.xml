@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<user>
+<tracklist>
 	<name>Shinji</name>
 
-	<!-- <trackslist> -->
-		<track>
+	<tracks>
+		<x2701>
 			<artist>Adriatique</artist>
 			<remixArtist></remixArtist>
 			<title>Dawning (Original Mix)</title>
@@ -12,9 +12,9 @@
 			<label>Afterlife Records</label>
 			<style>Melodic Techno</style>
 			<albumArtwork>images/release_artwork/nude.jpg</albumArtwork>
-		</track>
+		</x2701>
 
-		<track>
+		<x2702>
 			<artist>Marc Grabber, Unique (CRO)</artist>
 			<remixArtist></remixArtist>
 			<title> Longitude (Original Mix)</title>
@@ -22,7 +22,7 @@
 			<label>DnC Limited</label>
 			<style>Techno</style>
 			<albumArtwork>images/release_artwork/endless-escape.jpg</albumArtwork>
-		</track>
-	<!-- </trackslist> -->
+		</x2702>
+	</tracks>
 
-</user>
+</tracklist>
