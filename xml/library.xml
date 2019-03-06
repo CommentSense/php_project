@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<tracklist>
-	<name>Shinji</name>
-
+<Library>
 	<tracks>
 		<x2701>
 			<artist>Adriatique</artist>
-			<remixArtist>none</remixArtist>
+			<remixArtist></remixArtist>
 			<title>Dawning (Original Mix)</title>
 			<release>Nude</release>
 			<label>Afterlife Records</label>
@@ -16,7 +14,7 @@
 
 		<x2702>
 			<artist>Marc Grabber, Unique (CRO)</artist>
-			<remixArtist>none</remixArtist>
+			<remixArtist></remixArtist>
 			<title> Longitude (Original Mix)</title>
 			<release>Endless Escape</release>
 			<label>DnC Limited</label>
@@ -26,7 +24,7 @@
 		
 		<x2703>
 			<artist>Justrice</artist>
-			<remixArtist>none</remixArtist>
+			<remixArtist></remixArtist>
 			<title>Stellar (Original Mix)</title>
 			<release>Astrodust</release>
 			<label>DnC Limited</label>
@@ -36,7 +34,7 @@
 		
 		<x2704>
 			<artist>First Of The Last</artist>
-			<remixArtist>none</remixArtist>
+			<remixArtist></remixArtist>
 			<title>Xenja (Original Mix)</title>
 			<release>Ethereal Techno #006</release>
 			<label>Steyoyoke</label>
@@ -46,7 +44,7 @@
 		
 		<x2705>
 			<artist>EarthLife</artist>
-			<remixArtist>none</remixArtist>
+			<remixArtist></remixArtist>
 			<title>Frames Of Berlin (Original Mix)</title>
 			<release>Timeless To Mountain</release>
 			<label>Dear Deer Black</label>
@@ -56,7 +54,7 @@
 		
 		<x2706>
 			<artist>Mihølnir</artist>
-			<remixArtist>none</remixArtist>
+			<remixArtist></remixArtist>
 			<title>Delysid (Original Mix) </title>
 			<release>No Time for Caution</release>
 			<label>Uxoa Dutxa Elite</label>
@@ -66,7 +64,7 @@
 		
 		<x2707>
 			<artist>Strinner</artist>
-			<remixArtist>none</remixArtist>
+			<remixArtist></remixArtist>
 			<title>Deviation (Original Mix)</title>
 			<release>Deviation</release>
 			<label>Steyoyoke</label>
@@ -76,7 +74,7 @@
 		
 		<x2708>
 			<artist>Audio Units</artist>
-			<remixArtist>none</remixArtist>
+			<remixArtist></remixArtist>
 			<title>Hindol (Original Mix)</title>
 			<release>Hindol</release>
 			<label>Parquet Recordings</label>
@@ -86,7 +84,7 @@
 		
 		<x2709>
 			<artist>Nick Devon</artist>
-			<remixArtist>none</remixArtist>
+			<remixArtist></remixArtist>
 			<title>Venus Landing (Original Mix)</title>
 			<release>Venus Landing</release>
 			<label>Steyoyoke Black</label>
@@ -96,7 +94,7 @@
 		
 		<x2710>
 			<artist>First Of The Last</artist>
-			<remixArtist>none</remixArtist>
+			<remixArtist></remixArtist>
 			<title> Longitude (Original Mix)</title>
 			<release>Endless Escape</release>
 			<label>DnC Limited</label>
@@ -106,7 +104,7 @@
 		
 		<x2711>
 			<artist>Antonio De Angelis</artist>
-			<remixArtist>none</remixArtist>
+			<remixArtist></remixArtist>
 			<title>La Neve Cade (Orignal Mix)</title>
 			<release>Connection Series Vol.8</release>
 			<label>Children Of Tomorrow</label>
@@ -116,7 +114,7 @@
 		
 		<x2712>
 			<artist>Mallone, Nick Devon</artist>
-			<remixArtist>none</remixArtist>
+			<remixArtist></remixArtist>
 			<title>The Golden Apples of the Sun (Original Mix)</title>
 			<release>Back to Black, Vol. 1</release>
 			<label>Steyoyoke Black</label>
@@ -126,7 +124,7 @@
 		
 		<x2713>
 			<artist>Nick Devon</artist>
-			<remixArtist>none</remixArtist>
+			<remixArtist></remixArtist>
 			<title>Eternity (Acid Mix)</title>
 			<release>Innerverse</release>
 			<label>Steyoyoke Black</label>
@@ -146,7 +144,7 @@
 
 		<x2715>
 			<artist>Unique (CRO)</artist>
-			<remixArtist>none</remixArtist>
+			<remixArtist></remixArtist>
 			<title>Mind Consciousness (Original Mix)</title>
 			<release>Endless Escape</release>
 			<label>DnC Limited</label>
@@ -156,4 +154,4 @@
 	
 	</tracks>
 
-</tracklist>
+</Library>
