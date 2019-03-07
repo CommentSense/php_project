@@ -8,10 +8,11 @@
 <body>
 	<form>
 	<?php  
-		include 'tracklist.php';
+		require_once('Library.php');
+		include('User.php');
 
-		$tracklist = new Tracklist('xml/user01.xml');
-		$tracklist->displayTracks();		
+		$tracklist = Library::init();
+		$tracklist->displayLibrary();		
 	?>
 	</form>
 

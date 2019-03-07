@@ -1,26 +1,20 @@
 <?php
-class Tracklist{
 
-	/*
-		This constructor takes an xml file that contains information 
-		about the tracklist and turns it into an associative 
-		array so it can be easily parsed.
+class Tracklist{
+	/*	
+		A music library is supposed to have multiple user so this
+		Tracklist class corresponds to each user. It takes an xml file 
+		that contains information about the user's tracklist and turns 
+		it into an associative array so it can be easily parsed.
 		@param $filename: path to xml file
 	*/
-	function __construct($filename){
+	function __construct($userPathInfo){
 		//Load xml file
-		$xml = simplexml_load_file($filename);
+		$xml = simplexml_load_file('library.xml');
 		//convert xml file to json
 		$json = json_encode($xml);
 		//convert json into associative array
 		$this->tracklist = json_decode($json, TRUE);
-	}
-	/*
-		This method returns all the tracks the user has stored
-		@return: an associative array containing the user's tracklist 
-	*/
-	function getTracklist(){
-		return $this->tracklist['tracks'];
 	}
 	/*
 		Returns the specif track for a given key
@@ -30,7 +24,7 @@ class Tracklist{
 	function getTrack($key){
 		if($this->tracklist['tracks'][$key]){
 			//return the track with it's key value
-			return array ($key => $this->tracklist['tracks'][$key]);
+			return array ($key => $this->user->tracklist['tracks'][$key]);
 		}
 	}
 	/*
@@ -49,17 +43,23 @@ class Tracklist{
 		$this->tracklist[$key] = $value;
 
 	}
+	/*
+		This fuction displays the user's tracks 
+	*/
 	function displayTracks(){
-		$tracks = $this->getTracklist();
+		$tracks = $this->tracklist['tracks'];
 
 		foreach ($tracks as $key => $track) {
 			$artwork = $track['albumArtwork'];
+
 			echo "<div>".
-				 "<input type=\"checkbox\" name=\"selected[]\" value=\"$key\"/>".
-				 "<img src=\"$artwork\" width=\"50\" height=\"50\">".
-				 $track['artist'].' - '.$track['title'].
+				 	"<input type=\"checkbox\" name=\"selected[]\" value=\"$key\"/>".
+				 	"<img src=\"$artwork\" width=\"50\" height=\"50\">".
+				 	$track['artist'].' - '.$track['title'].
 				 "</div><br>";
 		}
 	}
+
 }
+
 ?>
