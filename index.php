@@ -1,6 +1,6 @@
 <?php 
 	//starts the library 
-	require_once('Library.php');
+	require_once('classes/Library.php');
 
 	//starts session
 	session_start();

@@ -54,11 +54,15 @@ class User{
 		foreach ($tracks as $key => $track) {
 			$artwork = $track['albumArtwork'];
 
-			echo "<div>".
-				 	"<input type=\"checkbox\" name=\"selected[]\" value=\"$key\"/>".
-				 	"<img src=\"$artwork\" width=\"50\" height=\"50\">".
-				 	$track['artist'].' - '.$track['title'].
-				 "</div><br>";
+			echo 	"<div class=\"container\">".
+						"<div class=picture>".
+				 			"<input type=\"checkbox\" name=\"selected[]\" value=\"$key\"/>".
+				 			"<img src=\"$artwork\" width=\"50\" height=\"50\">".
+				 		"</div>".
+				 		"<div class=textbox>".
+				 			"<p>".$track['artist'].' - '.$track['title']."</p>".
+				 		"</div>".
+				 	"</div>";
 		}
 	}
 

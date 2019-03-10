@@ -16,15 +16,24 @@
 	<title></title>
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
-<body>
+<header>
+   <div class="nav">
+     <ul>
+       <li class="home"><a class="active" href="#">Home</a></li>
+       <li class="zoundlcoud"><a href="#">Zoundcloud</a></li>
+       <li class="veatport"><a href="#">Veatport</a></li>
+       <li class="changeUser"><a href="index.php">Change User</a></li>
+       <!-- <li class="contact"><a href="#">Contact</a></li> -->
+     </ul>
+   </div>
+ </header>
 
+<body class="news">
 	<form name="tracklist" method="post">
 		
 		<?php
 			if(isset($_POST["removeTracks"])){
-				// print_r($_POST['selected']);
 				$trackKeys = $_POST["selected"];
-				print_r($trackKeys);
 				$_SESSION['user']->removeTracks($trackKeys);
 			}
 
