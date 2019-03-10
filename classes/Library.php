@@ -26,6 +26,20 @@ class Library{
         }
         return self::$instance;
 	}
+	/*
+		Returns the specif track for a given key
+		@param $key: the key used to identify the track
+		@return: the track stored in the list
+	*/
+	function getTrack($key){
+		if($this->library['tracks'][$key]){
+			//return the track with it's key value
+			return array ($key => $this->user->tracklist['tracks'][$key]);
+		}
+	}
+	/*
+		Function that displays the entire library in html
+	*/
 	function displayLibrary(){
 		$tracks = $this->library['tracks'];
 		foreach ($tracks as $key => $track) {

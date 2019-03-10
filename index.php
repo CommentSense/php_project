@@ -1,8 +1,7 @@
 <?php 
 	//starts the library 
 	require_once('Library.php');
-	//code for the user tracklist
-	include('User.php');
+
 	//starts session
 	session_start();
 
@@ -21,11 +20,13 @@
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<form name='user' method='post'>
+	<form name="user" method="post" action="home.php">
 			
 			<?php
 				displayUsers($users);
 			?>
+
+			<input type="submit" name="submitUser" value="Select User">
 			
 	</form>
 
@@ -46,7 +47,7 @@
 		// print_r($users);
 		foreach ($users as $key => $user) {
 			$path = $user['path'];
-			echo "<input type='radio' name=\"user\" value=\"$path\">$key<br>";
+			echo "<input type='radio' name=\"userPath\" value=\"$path\">$key<br>";
 
 
 		}

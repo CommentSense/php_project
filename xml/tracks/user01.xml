@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <tracklist>
-	<name>Shinji</name>
+	<name>Val</name>
 
 	<tracks>
 		<x2701>
@@ -73,86 +73,6 @@
 			<style>Techno</style>
 			<albumArtwork>images/release_artwork/deviation.jpg</albumArtwork>
 		</x2707>
-		
-		<x2708>
-			<artist>Audio Units</artist>
-			<remixArtist>none</remixArtist>
-			<title>Hindol (Original Mix)</title>
-			<release>Hindol</release>
-			<label>Parquet Recordings</label>
-			<style>Progressive Techno</style>
-			<albumArtwork>images/release_artwork/hindol.jpg</albumArtwork>
-		</x2708>
-		
-		<x2709>
-			<artist>Nick Devon</artist>
-			<remixArtist>none</remixArtist>
-			<title>Venus Landing (Original Mix)</title>
-			<release>Venus Landing</release>
-			<label>Steyoyoke Black</label>
-			<style>Melodic Techno</style>
-			<albumArtwork>images/release_artwork/venus-landing.jpg</albumArtwork>
-		</x2709>
-		
-		<x2710>
-			<artist>First Of The Last</artist>
-			<remixArtist>none</remixArtist>
-			<title> Longitude (Original Mix)</title>
-			<release>Endless Escape</release>
-			<label>DnC Limited</label>
-			<style>Techno</style>
-			<albumArtwork>images/release_artwork/endless-escape.jpg</albumArtwork>
-		</x2710>
-		
-		<x2711>
-			<artist>Antonio De Angelis</artist>
-			<remixArtist>none</remixArtist>
-			<title>La Neve Cade (Orignal Mix)</title>
-			<release>Connection Series Vol.8</release>
-			<label>Children Of Tomorrow</label>
-			<style>Techno</style>
-			<albumArtwork>images/release_artwork/connection-series-vol-8.jpg</albumArtwork>
-		</x2711>
-		
-		<x2712>
-			<artist>Mallone, Nick Devon</artist>
-			<remixArtist>none</remixArtist>
-			<title>The Golden Apples of the Sun (Original Mix)</title>
-			<release>Back to Black, Vol. 1</release>
-			<label>Steyoyoke Black</label>
-			<style>Melodic Techno</style>
-			<albumArtwork>images/release_artwork/back-to-black-vol-1.jpg</albumArtwork>
-		</x2712>
-		
-		<x2713>
-			<artist>Nick Devon</artist>
-			<remixArtist>none</remixArtist>
-			<title>Eternity (Acid Mix)</title>
-			<release>Innerverse</release>
-			<label>Steyoyoke Black</label>
-			<style>Techno</style>
-			<albumArtwork>images/release_artwork/endless-escape.jpg</albumArtwork>
-		</x2713>
-
-		<x2714>
-			<artist>Nick Devon, Never Lost</artist>
-			<remixArtist>Darko Milosevic</remixArtist>
-			<title>Timelapse (Darko Milosevic Remix)</title>
-			<release>Steyoyoke Black Reconstructed by Darko Milosevic</release>
-			<label>Steyoyoke Black</label>
-			<style>Techno</style>
-			<albumArtwork>images/release_artwork/steyoyoke-black-reconstructed-by-darko-milosevic.jpg</albumArtwork>
-		</x2714>
-
-		<x2715>
-			<artist>Unique (CRO)</artist>
-			<remixArtist>none</remixArtist>
-			<title>Mind Consciousness (Original Mix)</title>
-			<release>Endless Escape</release>
-			<label>DnC Limited</label>
-			<style>Techno</style>
-			<albumArtwork>images/release_artwork/endless-escape.jpg</albumArtwork>
-		</x2715>
 	
 	</tracks>
 

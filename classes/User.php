@@ -1,6 +1,6 @@
 <?php
 
-class Tracklist{
+class User{
 	/*	
 		A music library is supposed to have multiple user so this
 		Tracklist class corresponds to each user. It takes an xml file 
@@ -8,9 +8,9 @@ class Tracklist{
 		it into an associative array so it can be easily parsed.
 		@param $filename: path to xml file
 	*/
-	function __construct($userPathInfo){
+	function __construct($userPath){
 		//Load xml file
-		$xml = simplexml_load_file($userPathInfo);
+		$xml = simplexml_load_file($userPath);
 		//convert xml file to json
 		$json = json_encode($xml);
 		//convert json into associative array
@@ -31,8 +31,10 @@ class Tracklist{
 		This method removes track from user's tracklist
 		@param $key: the key used to find the track in the associative array
 	*/
-	function removeTrack($key){
-		unset($this->tracklist[$key]);
+	function removeTracks($keys){
+		foreach ($keys as $key) {
+			unset($this->tracklist['tracks'][$key]);
+		}
 	}
 	/*
 		Add track to user's tracklist
