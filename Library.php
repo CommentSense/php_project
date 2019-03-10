@@ -10,7 +10,7 @@ class Library{
 	*/
 	private function __construct(){
 		//Load xml file
-		$xml = simplexml_load_file('xml/user01.xml');
+		$xml = simplexml_load_file('xml/library.xml');
 		//convert xml file to json
 		$json = json_encode($xml);
 		//convert json into associative array

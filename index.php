@@ -1,22 +1,54 @@
+<?php 
+	//starts the library 
+	require_once('Library.php');
+	//code for the user tracklist
+	include('User.php');
+	//starts session
+	session_start();
+
+	//Load the music library
+	$library = Library::init();
+	$_SESSION['library'] = $library;
+
+	//Load the users available
+	$users = loadUsers();		
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
 	<title></title>
 	<link href="css/style.css" rel="stylesheet" type="text/css">
-	<!-- <link rel="stylesheet" href="css/style.css"> -->
 </head>
 <body>
-	<form>
-	<?php  
-		require_once('Library.php');
-		include('User.php');
-
-		$tracklist = Library::init();
-		$tracklist->displayLibrary();		
-	?>
+	<form name='user' method='post'>
+			
+			<?php
+				displayUsers($users);
+			?>
+			
 	</form>
 
 </body>
 </html>
 				
-					
+<?php					
+	function loadUsers(){
+		//Load the user available
+		$xml = simplexml_load_file('xml/users.xml');
+		//convert xml file to json
+		$json = json_encode($xml);
+		//return associative array associative array
+		return json_decode($json, TRUE);
+	}
+
+	function displayUsers($users){
+		// print_r($users);
+		foreach ($users as $key => $user) {
+			$path = $user['path'];
+			echo "<input type='radio' name=\"user\" value=\"$path\">$key<br>";
+
+
+		}
+	}
+?>

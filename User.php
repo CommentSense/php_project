@@ -10,7 +10,7 @@ class Tracklist{
 	*/
 	function __construct($userPathInfo){
 		//Load xml file
-		$xml = simplexml_load_file('library.xml');
+		$xml = simplexml_load_file($userPathInfo);
 		//convert xml file to json
 		$json = json_encode($xml);
 		//convert json into associative array

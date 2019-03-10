@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+
+	<user01>
+		<path>xml/tracks/user01.xml</path>
+	</user01>
+
+	<user02>
+		<path>xml/tracks/user01.xml</path>
+	</user02>
+	
+</Users>
