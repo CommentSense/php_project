@@ -1,13 +1,16 @@
 <?php 
 	//starts the library 
-	require_once('classes/Library.php');
+	include 'classes/Library.php';
 
 	//starts session
 	session_start();
 
 	//Load the music library
-	$library = Library::init();
-	$_SESSION['library'] = $library;
+	$zoundcloud = Library::init1('xml/zoundcloud.xml');
+	$_SESSION['zoundcloud'] = $zoundcloud;
+
+	$veatport = Library::init2('xml/veatport.xml');
+	$_SESSION['veatport'] = $veatport;
 
 	//Load the users available
 	$users = loadUsers();		

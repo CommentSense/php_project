@@ -55,14 +55,25 @@ class User{
 			$artwork = $track['albumArtwork'];
 
 			echo 	"<div class=\"container\">".
-						"<div class=picture>".
+						"<div class=image>".
+				 			"<img src=\"$artwork\" width=\"120\" height=\"116\">".
+				 		"</div>".
+				 		"<div class=text>".
+
+				 			"<div class=container2>".
+				 				"<div class=song>".
+						 			"<p>".$track['artist'].' - '.$track['title']."</p>".
+						 		"</div>".
+						 		"<div class=comment>".
+						 			"<p>\"".$track['comment']."\"</p>".
+						 		"</div>".
+					 		"</div>".
+
+					 	"</div>".
+				 		"<div class=checkbox>".
 				 			"<input type=\"checkbox\" name=\"selected[]\" value=\"$key\"/>".
-				 			"<img src=\"$artwork\" width=\"50\" height=\"50\">".
 				 		"</div>".
-				 		"<div class=textbox>".
-				 			"<p>".$track['artist'].' - '.$track['title']."</p>".
-				 		"</div>".
-				 	"</div>";
+				 	"</div><br>";
 		}
 	}
 
