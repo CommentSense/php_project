@@ -25,7 +25,7 @@
 <body>
 	<form name="tracklist" method="post" action="playlists.php">
 		<p><font color="white">New Playlist</font>
-		<textarea cols="30" rows="1" name="comment"></textarea>
+		<textarea cols="30" rows="1" name="newPlaylistName"></textarea>
 		<input type="submit" name="newPlaylist" value="Create New Playlist">
 		</p>
 
@@ -37,27 +37,42 @@
 				//set it as the working playlist
 				$_SESSION['user']-> setCurrentPlaylist($playlist);
 			}
+			//handles the removal of track on playlist
 			if(isset($_POST["removeTracks"])){
 				//grab the keys of the selected tracks
 				$trackKeys = $_POST["selected"];
 				//remove tracks from user's tracklist
 				$_SESSION['user']->removeFromPlaylist($trackKeys);
 			}
+			//handles adding tracks to playlist from myMusic.php
 			if(isset($_POST["addToPlaylist"])){
 				//grab the keys of the selected tracks
 				$trackKeys = $_POST["selected"];
+				//grab the playlist name
 				$playlist = $_POST["playlist"];
+				 $_SESSION['user']->setCurrentPlaylist($playlist);
+				 //iterate and add items to playlist
 				foreach ($trackKeys as $key) {
-					echo $key;
 					 $_SESSION['user']->addToPlaylist($key, $playlist);
 				}
+			}
+			//handles creating a new playlist
+			if(isset($_POST["newPlaylist"])){
+				//grab the playlist name
+				$name = $_POST["newPlaylistName"];
+				$_SESSION['user']->createPlaylist($name);
+			}
+			if(isset($_POST["removePlaylist"])){
+				$name = $_POST["playlist"];
+				$_SESSION['user']->removePlaylist($name);
 			}
 
 			//Display User's Playlists
 			$_SESSION['user']->displayPlaylists();
 		?>
 		<input type="submit" name="changePlaylist" value="Change Playlist">
-
+		<input type="submit" name="removePlaylist" value="Remove Playlist">
+		<hr>
 		<?php
 			//Get the name of the playlist
 			$playlistName = $_SESSION['user']->currentPlaylist();

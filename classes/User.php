@@ -76,13 +76,24 @@ class User{
 		@param $playlist: the playlist to add to
 	*/
 	function addToPlaylist($key, $playlist){
+		//check to see if the track is already on the playlist
+		if(in_array($key, $this->tracklist['playlists'][$playlist]['track']))
+			return;
+		//if it is not already there append it to the playlist
 		array_push($this->tracklist['playlists'][$playlist]['track'], $key);
 	}
+	/*
+		This method removes tracks from the users playlist
+		@param $keys: array of tracks keys to remove
+	*/
 
 	function removeFromPlaylist($keys){
+		//grabs name of the current playlist
 		$name = $this->tracklist['currentPlaylist'];
+		//grabs track of the current playlist
 		$tracks = $this->tracklist['playlists'][$name]['track'];
 
+		//iterates and removes tracks related to the key
 		$i = 0;
 		foreach ($tracks as $track) {
 			if(in_array($track, $keys)){
@@ -93,9 +104,11 @@ class User{
 
 	}
 	function createPlaylist($name){
-		$this->tracklist['playslists'][$name] = array();
-		 $this->tracklist['currentPlaylist'] = $name;
+		$this->tracklist['playlists'][$name] = array('track' => array());
 
+	}
+	function removePlaylist($name){
+		unset($this->tracklist['playlists'][$name]);
 	}
 	/*
 		This fuction displays the user's tracks. The string that is echoed
@@ -142,12 +155,12 @@ class User{
 		form is posted the keys are passed onto the html 'selected[]' array
 		@param $key: the key for a specific track
 	*/
-
 	function displaySingleTrack($key){
-		//grab all the track from the libray
+		//If there is not track do nothing
 		if(!$this->getTrack($key)){
 			return;
 		}
+		//grab all the track from the libray
 		$track = $this->getTrack($key);
 		$artwork = $track['albumArtwork'];
 
@@ -174,15 +187,19 @@ class User{
 			 		"</div>".
 			 	"</div><br>";
 	}
-
+	/*
+		This fuction displays the playslist the user has. The string that is echoed
+		is formated in html that way we can display it and style it in css. Each time 
+		it iterates it creates a radio button the user can select
+	*/
 	function displayPlaylists(){
+		//grad the user's playlists
 		$playlists = $this->tracklist['playlists'];
+		//if size is zero display empty
+		if(sizeof($playlists) == 0)
+			echo "<p><font color=\"white\"><b>You have no tracks to display</b></font><br>";
+		//iterate radio button in html format
 		foreach ($playlists as $key => $playlist) {
-
-		
-			// $path = $user['path'];
-			// $image = $user['image'];
-
 			echo 	"<div class=\"containerPlaylist\">".
 				 		"<div class=playlist>".
 				 			"<input type='radio' name=\"playlist\" value=\"$key\">$key".
