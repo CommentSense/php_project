@@ -74,6 +74,7 @@
 		<br><br>
 		<input type="submit" name="addComment" value="Comment">
 		<br><hr><br>
+		<p><b><font color="white">Playlists:</font></b></p>
 		<?php
 			$_SESSION['user']->displayPlaylists();
 		?>

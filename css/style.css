@@ -3,15 +3,15 @@ html {
 }
 
 input[type='checkbox'] {
-    -webkit-appearance:none;
-    width:30px;
-    height:30px;
-    background:white;
-    border-radius:5px;
-    border:2px solid #555;
+  -webkit-appearance:none;
+  width:30px;
+  height:30px;
+  background:white;
+  border-radius:5px;
+  border:2px solid #555;
 }
 input[type='checkbox']:checked {
-    background: #888;
+  background: #888;
 }
 
 /*grid for tracks----------------------------------*/
@@ -123,11 +123,11 @@ input[type='checkbox']:checked {
 /*navigation bar http://css-snippets.com/simple-horizontal-navigation/*/
 
 body {
-  	margin: 0;
-  	padding: 0;
-  	max-width: 600px;
-   	margin: auto;
-  	background: #000;
+  margin: 0;
+  padding: 0;
+  max-width: 600px;
+  margin: auto;
+  background: #000;
 }
 
 .nav ul {

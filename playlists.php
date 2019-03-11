@@ -67,6 +67,7 @@
 				$_SESSION['user']->removePlaylist($name);
 			}
 
+			echo "<p><b><font color=\"white\"><b>Playlists:</b></font></b><br>";
 			//Display User's Playlists
 			$_SESSION['user']->displayPlaylists();
 		?>
@@ -79,7 +80,7 @@
 			//Get the playlist itself
 			$playlistTracks = $_SESSION['user']->tracklist['playlists'][$playlistName]['track'];
 			//Displays current playlist
-			echo "<p><font size=\"15\"color=\"white\"><b>".$playlistName."</b></font><br>";
+			echo "<p><font size=\"15px\" color=\"white\"><b>".$playlistName."</b></font><br>";
 			
 			//Displays tracks inside the playlist
 			foreach ($playlistTracks as $track) {
