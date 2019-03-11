@@ -68,14 +68,22 @@
 			$_SESSION['user']->displayTracks();
 		?>
 		<input type="submit" name="removeTracks" value="Remove Selected Tracks">
-		<br><br>
-		<input type="submit" name="addToPlaylist" value="Add Tracks to X Playlist">
-		<br>
+		<br><hr>
 		<p><font color="white">Add comment to selected tracks:</font></p>
 		<textarea cols="50" rows="3" name="comment"></textarea>
 		<br><br>
-		<input type="submit" name="addComment" value="Add Comment">
+		<input type="submit" name="addComment" value="Comment">
+		<br><hr><br>
+		<?php
+			$_SESSION['user']->displayPlaylists();
+		?>
+		<br>
+		<input type="submit" formaction="playlists.php" name="addToPlaylist" value="Add Selected Tracks To Playlist">
+		<br><br><br>
 	</form>
+	
+	
+	
 
 </body>
 </html>

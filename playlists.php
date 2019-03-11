@@ -43,18 +43,26 @@
 				//remove tracks from user's tracklist
 				$_SESSION['user']->removeFromPlaylist($trackKeys);
 			}
+			if(isset($_POST["addToPlaylist"])){
+				//grab the keys of the selected tracks
+				$trackKeys = $_POST["selected"];
+				$playlist = $_POST["playlist"];
+				foreach ($trackKeys as $key) {
+					echo $key;
+					 $_SESSION['user']->addToPlaylist($key, $playlist);
+				}
+			}
 
-
-			//Get the name of the playlist
-			$playlistName = $_SESSION['user']->currentPlaylist();
-			//Get the playlist itself
-			$playlistTracks = $_SESSION['user']->tracklist['playlists'][$playlistName]['track'];
 			//Display User's Playlists
 			$_SESSION['user']->displayPlaylists();
 		?>
 		<input type="submit" name="changePlaylist" value="Change Playlist">
 
 		<?php
+			//Get the name of the playlist
+			$playlistName = $_SESSION['user']->currentPlaylist();
+			//Get the playlist itself
+			$playlistTracks = $_SESSION['user']->tracklist['playlists'][$playlistName]['track'];
 			//Displays current playlist
 			echo "<p><font size=\"15\"color=\"white\"><b>".$playlistName."</b></font><br>";
 			

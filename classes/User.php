@@ -22,9 +22,12 @@ class User{
 		@return: the track stored in the list
 	*/
 	function getTrack($key){
-		if($this->tracklist['tracks'][$key]){
+		if(isset($this->tracklist['tracks'][$key])){
 			//return the track with it's key value
 			return $this->tracklist['tracks'][$key];
+		}
+		else{
+			return FALSE;
 		}
 	}
 	/*
@@ -68,15 +71,14 @@ class User{
 		return $this->tracklist['currentPlaylist'];
 	}
 	/*
-		Add comment to user's track
+		Adds track to user's playlist
 		@param $key: key specific to track
-		@param $track: associative array containing track info
+		@param $playlist: the playlist to add to
 	*/
-	function addToPlaylist($key){
-		$name = $this->tracklist['currentPlaylist'];
-		$playlist = $this->tracklist['playslists'][$name];
-		array_push($playlist, $key);
+	function addToPlaylist($key, $playlist){
+		array_push($this->tracklist['playlists'][$playlist]['track'], $key);
 	}
+
 	function removeFromPlaylist($keys){
 		$name = $this->tracklist['currentPlaylist'];
 		$tracks = $this->tracklist['playlists'][$name]['track'];
@@ -143,6 +145,9 @@ class User{
 
 	function displaySingleTrack($key){
 		//grab all the track from the libray
+		if(!$this->getTrack($key)){
+			return;
+		}
 		$track = $this->getTrack($key);
 		$artwork = $track['albumArtwork'];
 
