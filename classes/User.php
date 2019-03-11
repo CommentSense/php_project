@@ -59,11 +59,13 @@ class User{
 		@param $playlist: name of the playlist to be used
 	*/
 	function setCurrentPlaylist($playlist){
-		$this->tracklist['currestPlaylist'] = $playlist;
+		$this->tracklist['currentPlaylist'] = $playlist;
 	}
-
+	/*
+		Returns the current playlist
+	*/
 	function currentPlaylist(){
-		return $this->tracklist['currestPlaylist'];
+		return $this->tracklist['currentPlaylist'];
 	}
 	/*
 		Add comment to user's track
@@ -71,14 +73,26 @@ class User{
 		@param $track: associative array containing track info
 	*/
 	function addToPlaylist($key){
-		$name = $this->tracklist['currestPlaylist'];
+		$name = $this->tracklist['currentPlaylist'];
 		$playlist = $this->tracklist['playslists'][$name];
 		array_push($playlist, $key);
 	}
+	function removeFromPlaylist($keys){
+		$name = $this->tracklist['currentPlaylist'];
+		$tracks = $this->tracklist['playlists'][$name]['track'];
 
+		$i = 0;
+		foreach ($tracks as $track) {
+			if(in_array($track, $keys)){
+				unset($this->tracklist['playlists'][$name]['track'][$i]);
+			}
+			$i++;			
+		}
+
+	}
 	function createPlaylist($name){
 		$this->tracklist['playslists'][$name] = array();
-		 $this->tracklist['currestPlaylist'] = $name;
+		 $this->tracklist['currentPlaylist'] = $name;
 
 	}
 	/*

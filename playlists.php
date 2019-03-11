@@ -14,7 +14,7 @@
    <div class="nav">
      <ul>
        <li class="My Music"><a href="myMusic.php">My Music</a></li>
-       <li class="playlists"><a href="playlists.php">My Playlists</a></li>
+       <li class="playlists"><a class="active" href="playlists.php">My Playlists</a></li>
        <li class="zoundlcoud"><a href="musicSource.php?load=Z">Zoundcloud</a></li>
        <li class="veatport"><a href="musicSource.php?load=V">Veatport</a></li>
        <li class="changeUser"><a href="index.php">Change User</a></li>
@@ -23,13 +23,28 @@
  </header>
 
 <body>
-	<form name="tracklist" method="post" action="myMusic.php">
+	<form name="tracklist" method="post" action="playlists.php">
 		<p><font color="white">New Playlist</font>
 		<textarea cols="30" rows="1" name="comment"></textarea>
 		<input type="submit" name="newPlaylist" value="Create New Playlist">
 		</p>
 
 		<?php
+			//This post helps change the current playlist
+			if(isset($_POST["changePlaylist"])){
+				//grab the name of the playlist
+				$playlist = $_POST["playlist"];
+				//set it as the working playlist
+				$_SESSION['user']-> setCurrentPlaylist($playlist);
+			}
+			if(isset($_POST["removeTracks"])){
+				//grab the keys of the selected tracks
+				$trackKeys = $_POST["selected"];
+				//remove tracks from user's tracklist
+				$_SESSION['user']->removeFromPlaylist($trackKeys);
+			}
+
+
 			//Get the name of the playlist
 			$playlistName = $_SESSION['user']->currentPlaylist();
 			//Get the playlist itself
