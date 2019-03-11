@@ -16,27 +16,35 @@
 			<albumArtwork>images/release_artwork/timeless-to-mountain.jpg</albumArtwork>
 		</x2705>
 		
-		<x2706>
-			<artist>Mihølnir</artist>
-			<remixArtist>none</remixArtist>
-			<title>Delysid (Original Mix) </title>
-			<release>No Time for Caution</release>
-			<label>Uxoa Dutxa Elite</label>
+		<x2721>
+			<artist>Marc Romboy, Stephan Bodzin</artist>
+			<remixArtist></remixArtist>
+			<title>The Alchemist (Original Mix)</title>
+			<release>The Alchemist / The Old Alchemist</release>
+			<label>Systematic Recordings</label>
 			<style>Melodic Techno</style>
-			<comment>Melodic Techno</comment>
-			<albumArtwork>images/release_artwork/no-time-for-caution.jpg</albumArtwork>
-		</x2706>
-		
-		<x2707>
-			<artist>Strinner</artist>
-			<remixArtist>none</remixArtist>
-			<title>Deviation (Original Mix)</title>
-			<release>Deviation</release>
-			<label>Steyoyoke</label>
-			<style>Techno</style>
-			<comment>Techno</comment>
-			<albumArtwork>images/release_artwork/deviation.jpg</albumArtwork>
-		</x2707>
+			<albumArtwork>images/release_artwork/the-alchemist-the-old-alchemist.jpg</albumArtwork>
+		</x2721>
+
+		<x2722>
+			<artist>Barnt</artist>
+			<remixArtist>Tale Of Us And Recondite</remixArtist>
+			<title>Cherry Red (Tale Of Us And Recondite Mix)</title>
+			<release>Magazine 131</release>
+			<label>Magazine</label>
+			<style>Melodic Techno</style>
+			<albumArtwork>images/release_artwork/magazine-131.jpg</albumArtwork>
+		</x2722>
+
+		<x2723>
+			<artist>SCB</artist>
+			<remixArtist>Mind Against</remixArtist>
+			<title>Test Tubes (Mind Against Celestial Dub)</title>
+			<release>Test Cut</release>
+			<label>Hotflush Recordings</label>
+			<style>Melodic Techno</style>
+			<albumArtwork>images/release_artwork/test-cut.jpg</albumArtwork>
+		</x2723>
 	
 	</tracks>
 
@@ -45,6 +53,10 @@
 			<track>x2706</track>
 			<track>x2707</track>
 		</Favorites>
+		<Old>
+			<track>x2710</track>
+			<track>x2711</track>
+		</Old>
 	</playlists>
 
 

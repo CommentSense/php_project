@@ -1,18 +1,108 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Library>
-	<name>Library</name>
-	<tracks>
-		<x2701>
-			<artist>Adriatique</artist>
+	<name>Veatport</name>
+	<tracks>	
+		<x2716>
+			<artist>Woo York</artist>
 			<remixArtist></remixArtist>
-			<title>Dawning (Original Mix)</title>
-			<release>Nude</release>
-			<label>Afterlife Records</label>
+			<title>Elusice (Original Mix)</title>
+			<release>Continuum I Terra Nova</release>
+			<label>Dynamic Reflection</label>
+			<style>Leftfield Techno</style>
+			<albumArtwork>images/release_artwork/continuum.jpg</albumArtwork>
+		</x2716>
+
+		<x2717>
+			<artist>Feemarx</artist>
+			<remixArtist>Be Morais</remixArtist>
+			<title>Fringe (Be Morais Remix) </title>
+			<release>Edge / Fringe</release>
+			<label>Not Another</label>
 			<style>Melodic Techno</style>
-			<albumArtwork>images/release_artwork/nude.jpg</albumArtwork>
-		</x2701>
-	
+			<albumArtwork>images/release_artwork/edge-fringe.jpg</albumArtwork>
+		</x2717>
+
+		<x2718>
+			<artist>Chaty, Alerch</artist>
+			<remixArtist>Dubspeeka</remixArtist>
+			<title>Morr (Dubspeeka Remix)</title>
+			<release>Morr</release>
+			<label>Anathema Records</label>
+			<style>Melodic Techno</style>
+			<albumArtwork>images/release_artwork/morr.jpg</albumArtwork>
+		</x2718>
+
+		<x2719>
+			<artist>Shiffer</artist>
+			<remixArtist></remixArtist>
+			<title>Ourselves Behind Ourselves  (Original Mix)</title>
+			<release>Soul Masks EP</release>
+			<label>Siamese</label>
+			<style>Melodic Techno</style>
+			<albumArtwork>images/release_artwork/soul-masks-ep.jpg</albumArtwork>
+		</x2719>
+
+		<x2720>
+			<artist>PVNV</artist>
+			<remixArtist></remixArtist>
+			<title>Intrasolaar (Shlomo Remix) )</title>
+			<release>Consortium</release>
+			<label>Taapion</label>
+			<style>Techno</style>
+			<albumArtwork>images/release_artwork/consortium.jpg</albumArtwork>
+		</x2720>
+
+		<x2721>
+			<artist>Marc Romboy, Stephan Bodzin</artist>
+			<remixArtist></remixArtist>
+			<title>The Alchemist (Original Mix)</title>
+			<release>The Alchemist / The Old Alchemist</release>
+			<label>Systematic Recordings</label>
+			<style>Melodic Techno</style>
+			<albumArtwork>images/release_artwork/the-alchemist-the-old-alchemist.jpg</albumArtwork>
+		</x2721>
+
+		<x2722>
+			<artist>Barnt</artist>
+			<remixArtist>Tale Of Us And Recondite</remixArtist>
+			<title>Cherry Red (Tale Of Us And Recondite Mix)</title>
+			<release>Magazine 131</release>
+			<label>Magazine</label>
+			<style>Melodic Techno</style>
+			<albumArtwork>images/release_artwork/magazine-131.jpg</albumArtwork>
+		</x2722>
+
+		<x2723>
+			<artist>SCB</artist>
+			<remixArtist>Mind Against</remixArtist>
+			<title>Test Tubes (Mind Against Celestial Dub)</title>
+			<release>Test Cut</release>
+			<label>Hotflush Recordings</label>
+			<style>Melodic Techno</style>
+			<albumArtwork>images/release_artwork/test-cut.jpg</albumArtwork>
+		</x2723>
+
+		<x2724>
+			<artist>Obscure Sense</artist>
+			<remixArtist></remixArtist>
+			<title>Apollo (Original Mix)</title>
+			<release>Andromeda</release>
+			<label>Us And Them Records</label>
+			<style>Melodic Techno</style>
+			<albumArtwork>images/release_artwork/andromeda.jpg</albumArtwork>
+		</x2724>
+		
+		<x2725>
+			<artist>Sebo K</artist>
+			<remixArtist></remixArtist>
+			<title>Nebula (Original Mix)</title>
+			<release>Stories We Tell Ourselves EP</release>
+			<label>Rekids</label>
+			<style>Leftfield Techno</style>
+			<albumArtwork>images/release_artwork/stories-we-tell-ourselves-ep.jpg</albumArtwork>
+		</x2725>
+		
 	</tracks>
 
 </Library>

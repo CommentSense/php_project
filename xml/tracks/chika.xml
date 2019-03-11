@@ -3,7 +3,18 @@
 <tracklist>
 	<currentPlaylist>Favorites</currentPlaylist>
 	
-	<tracks>		
+	<tracks>
+
+		<x2716>
+			<artist>Woo York</artist>
+			<remixArtist></remixArtist>
+			<title>Elusice (Original Mix)</title>
+			<release>Continuum I Terra Nova</release>
+			<label>Dynamic Reflection</label>
+			<style>Leftfield Techno</style>
+			<albumArtwork>images/release_artwork/continuum.jpg</albumArtwork>
+		</x2716>
+
 		<x2712>
 			<artist>Mallone, Nick Devon</artist>
 			<remixArtist>none</remixArtist>
@@ -36,17 +47,6 @@
 			<comment>Techno</comment>
 			<albumArtwork>images/release_artwork/steyoyoke-black-reconstructed-by-darko-milosevic.jpg</albumArtwork>
 		</x2714>
-
-		<x2715>
-			<artist>Unique (CRO)</artist>
-			<remixArtist>none</remixArtist>
-			<title>Mind Consciousness (Original Mix)</title>
-			<release>Endless Escape</release>
-			<label>DnC Limited</label>
-			<style>Techno</style>
-			<comment>Techno</comment>
-			<albumArtwork>images/release_artwork/endless-escape.jpg</albumArtwork>
-		</x2715>
 	
 	</tracks>
 
@@ -55,6 +55,10 @@
 			<track>x2714</track>
 			<track>x2715</track>
 		</Favorites>
+		<Old>
+			<track>x2710</track>
+			<track>x2711</track>
+		</Old>
 	</playlists>
 
 </tracklist>
