@@ -10,6 +10,7 @@
 			<release>Continuum I Terra Nova</release>
 			<label>Dynamic Reflection</label>
 			<style>Leftfield Techno</style>
+			<comment>Leftfield Techno</comment>
 			<albumArtwork>images/release_artwork/continuum.jpg</albumArtwork>
 		</x2716>
 
@@ -19,7 +20,8 @@
 			<title>Fringe (Be Morais Remix) </title>
 			<release>Edge / Fringe</release>
 			<label>Not Another</label>
-			<style>Melodic Techno</style>
+			<style>Melodic Techno</style>			
+			<comment>Melodic Techno</comment>
 			<albumArtwork>images/release_artwork/edge-fringe.jpg</albumArtwork>
 		</x2717>
 
@@ -29,7 +31,8 @@
 			<title>Morr (Dubspeeka Remix)</title>
 			<release>Morr</release>
 			<label>Anathema Records</label>
-			<style>Melodic Techno</style>
+			<style>Melodic Techno</style>			
+			<comment>Melodic Techno</comment>
 			<albumArtwork>images/release_artwork/morr.jpg</albumArtwork>
 		</x2718>
 
@@ -39,7 +42,8 @@
 			<title>Ourselves Behind Ourselves  (Original Mix)</title>
 			<release>Soul Masks EP</release>
 			<label>Siamese</label>
-			<style>Melodic Techno</style>
+			<style>Melodic Techno</style>			
+			<comment>Melodic Techno</comment>
 			<albumArtwork>images/release_artwork/soul-masks-ep.jpg</albumArtwork>
 		</x2719>
 
@@ -49,7 +53,8 @@
 			<title>Intrasolaar (Shlomo Remix) )</title>
 			<release>Consortium</release>
 			<label>Taapion</label>
-			<style>Techno</style>
+			<style>Techno</style>			
+			<comment>Techno</comment>
 			<albumArtwork>images/release_artwork/consortium.jpg</albumArtwork>
 		</x2720>
 
@@ -59,7 +64,8 @@
 			<title>The Alchemist (Original Mix)</title>
 			<release>The Alchemist / The Old Alchemist</release>
 			<label>Systematic Recordings</label>
-			<style>Melodic Techno</style>
+			<style>Melodic Techno</style>			
+			<comment>Melodic Techno</comment>
 			<albumArtwork>images/release_artwork/the-alchemist-the-old-alchemist.jpg</albumArtwork>
 		</x2721>
 
@@ -69,7 +75,8 @@
 			<title>Cherry Red (Tale Of Us And Recondite Mix)</title>
 			<release>Magazine 131</release>
 			<label>Magazine</label>
-			<style>Melodic Techno</style>
+			<style>Melodic Techno</style>			
+			<comment>Melodic Techno</comment>
 			<albumArtwork>images/release_artwork/magazine-131.jpg</albumArtwork>
 		</x2722>
 
@@ -79,7 +86,8 @@
 			<title>Test Tubes (Mind Against Celestial Dub)</title>
 			<release>Test Cut</release>
 			<label>Hotflush Recordings</label>
-			<style>Melodic Techno</style>
+			<style>Melodic Techno</style>			
+			<comment>Melodic Techno</comment>
 			<albumArtwork>images/release_artwork/test-cut.jpg</albumArtwork>
 		</x2723>
 
@@ -89,17 +97,19 @@
 			<title>Apollo (Original Mix)</title>
 			<release>Andromeda</release>
 			<label>Us And Them Records</label>
-			<style>Melodic Techno</style>
+			<style>Melodic Techno</style>			
+			<comment>Melodic Techno</comment>
 			<albumArtwork>images/release_artwork/andromeda.jpg</albumArtwork>
 		</x2724>
-		
+
 		<x2725>
 			<artist>Sebo K</artist>
 			<remixArtist></remixArtist>
 			<title>Nebula (Original Mix)</title>
 			<release>Stories We Tell Ourselves EP</release>
 			<label>Rekids</label>
-			<style>Leftfield Techno</style>
+			<style>Leftfield Techno</style>			
+			<comment>Leftfield Techno</comment>
 			<albumArtwork>images/release_artwork/stories-we-tell-ourselves-ep.jpg</albumArtwork>
 		</x2725>
 		
