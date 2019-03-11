@@ -3,14 +3,17 @@
 	include "classes/Library.php";
 	session_start();
 
-
+	//These 2 if statemenst allow the navigation bar to 
+	//set the attrbutes for the current library we are using
 	if($_GET['load'] == 'Z'){
 		$zoundlcoudClass = "class=\"active\"";
 		$veatportClass = "";
+		$_SESSION['currentLibrary'] = $_SESSION['zoundcloud'];
 	}
 	if($_GET['load'] == 'V'){
 		$zoundlcoudClass = "";
 		$veatportClass = "class=\"active\"";
+		$_SESSION['currentLibrary'] = $_SESSION['veatport'];
 	}
 
 	// if(isset($_POST["submitUser"])){
@@ -38,15 +41,12 @@
    </div>
  </header>
 
-<body class="news">
-	<form name="tracklist" method="post">
+<body>
+	<form name="tracklist" method="post" action="home.php">
 		
 		<?php
 
-			if($_GET['load'] == 'Z')
-				$_SESSION['zoundcloud']->displayLibrary();
-			if($_GET['load'] == 'V')
-				$_SESSION['veatport']->displayLibrary();
+			$_SESSION['currentLibrary']->displayLibrary();
 		?>
 		<input type="submit" name="addTracks" value="Add Tracks">
 	</form>

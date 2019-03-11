@@ -42,7 +42,8 @@ class User{
 		@param $track: associative array containing track info
 	*/
 	function addTrack($key, $track){
-		$this->tracklist[$key] = $value;
+		$this->tracklist['tracks'][$key] = $track[$key];
+		$this->tracklist['tracks'][$key]['comment'] = "NEW TRACK!";
 
 	}
 	/*

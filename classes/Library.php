@@ -46,7 +46,7 @@ class Library{
 	function getTrack($key){
 		if($this->library['tracks'][$key]){
 			//return the track with it's key value
-			return array ($key => $this->user->tracklist['tracks'][$key]);
+			return array ($key => $this->library['tracks'][$key]);
 		}
 	}
 	/*

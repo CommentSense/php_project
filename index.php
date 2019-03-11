@@ -8,6 +8,7 @@
 	//Load the music library
 	$zoundcloud = Library::init1('xml/zoundcloud.xml');
 	$_SESSION['zoundcloud'] = $zoundcloud;
+	$_SESSION['currentLibrary'] = $zoundcloud;
 
 	$veatport = Library::init2('xml/veatport.xml');
 	$_SESSION['veatport'] = $veatport;

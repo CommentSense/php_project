@@ -1,8 +1,10 @@
 <?php
 	include "classes/User.php";
+	include "classes/Library.php";
 	
 	session_start();
 
+	//Post to grab the current user if not already set
 	if(isset($_POST["submitUser"])){
 		$userPath = $_POST["userPath"];
 		$user = new User($userPath);
@@ -28,13 +30,21 @@
    </div>
  </header>
 
-<body class="news">
+<body>
 	<form name="tracklist" method="post">
 		
 		<?php
 			if(isset($_POST["removeTracks"])){
 				$trackKeys = $_POST["selected"];
 				$_SESSION['user']->removeTracks($trackKeys);
+			}
+			if(isset($_POST["addTracks"])){
+				$trackKeys = $_POST["selected"];
+
+				foreach ($trackKeys as $key) {
+					$track = $_SESSION['currentLibrary']->getTrack($key);
+					$_SESSION['user']->addTrack($key, $track);
+				}
 			}
 
 			$_SESSION['user']->displayTracks();
