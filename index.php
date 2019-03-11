@@ -24,7 +24,7 @@
 	<link href="css/style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-	<form name="user" method="post" action="home.php">
+	<form name="user" method="post" action="myMusic.php">
 			
 			<?php
 				displayUsers($users);
@@ -52,8 +52,6 @@
 		foreach ($users as $key => $user) {
 			$path = $user['path'];
 			$image = $user['image'];
-
-			// echo "<input type='radio' name=\"userPath\" value=\"$path\">$key<br>";
 
 			echo 	"<div class=\"containerUser\">".
 						"<div class=image>".

@@ -21,7 +21,8 @@
 <header>
    <div class="nav">
      <ul>
-       <li class="My Music"><a class="active" href="#">My Music</a></li>
+       <li class="My Music"><a class="active" href="myMusic.php">My Music</a></li>
+       <li class="playlists"><a href="playlists.php">My Playlists</a></li>
        <li class="zoundlcoud"><a href="musicSource.php?load=Z">Zoundcloud</a></li>
        <li class="veatport"><a href="musicSource.php?load=V">Veatport</a></li>
        <li class="changeUser"><a href="index.php">Change User</a></li>
@@ -54,12 +55,24 @@
 				}
 			}
 
+			if(isset($_POST["addComment"])){
+				//grab the keys of the selected tracks
+				$trackKeys = $_POST["selected"];
+				$comment = $_POST["comment"];
+				foreach ($trackKeys as $key) {
+					//add track to the user's tracklist
+					$_SESSION['user']->addComment($key, $comment);
+				}
+			}
+			//Displays all user's tracks
 			$_SESSION['user']->displayTracks();
 		?>
 		<input type="submit" name="removeTracks" value="Remove Selected Tracks">
+		<br><br>
+		<input type="submit" name="addToPlaylist" value="Add Tracks to X Playlist">
 		<br>
 		<p><font color="white">Add comment to selected tracks:</font></p>
-		<textarea cols="50" cols="2" name="comment"></textarea>
+		<textarea cols="50" rows="3" name="comment"></textarea>
 		<br><br>
 		<input type="submit" name="addComment" value="Add Comment">
 	</form>

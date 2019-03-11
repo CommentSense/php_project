@@ -1,53 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <tracklist>
-	<name>Bryan</name>
-
+	<currestPlaylist>Favorites</currestPlaylist>
+	
 	<tracks>		
-		<x2708>
-			<artist>Audio Units</artist>
-			<remixArtist>none</remixArtist>
-			<title>Hindol (Original Mix)</title>
-			<release>Hindol</release>
-			<label>Parquet Recordings</label>
-			<style>Progressive Techno</style>
-			<comment>Progressive Techno</comment>
-			<albumArtwork>images/release_artwork/hindol.jpg</albumArtwork>
-		</x2708>
-		
-		<x2709>
-			<artist>Nick Devon</artist>
-			<remixArtist>none</remixArtist>
-			<title>Venus Landing (Original Mix)</title>
-			<release>Venus Landing</release>
-			<label>Steyoyoke Black</label>
-			<style>Melodic Techno</style>
-			<comment>Melodic Techno</comment>
-			<albumArtwork>images/release_artwork/venus-landing.jpg</albumArtwork>
-		</x2709>
-		
-		<x2710>
-			<artist>First Of The Last</artist>
-			<remixArtist>none</remixArtist>
-			<title> Longitude (Original Mix)</title>
-			<release>Endless Escape</release>
-			<label>DnC Limited</label>
-			<style>Techno</style>
-			<comment>Techno</comment>
-			<albumArtwork>images/release_artwork/endless-escape.jpg</albumArtwork>
-		</x2710>
-		
-		<x2711>
-			<artist>Antonio De Angelis</artist>
-			<remixArtist>none</remixArtist>
-			<title>La Neve Cade (Orignal Mix)</title>
-			<release>Connection Series Vol.8</release>
-			<label>Children Of Tomorrow</label>
-			<style>Techno</style>
-			<comment>Techno</comment>
-			<albumArtwork>images/release_artwork/connection-series-vol-8.jpg</albumArtwork>
-		</x2711>
-		
 		<x2712>
 			<artist>Mallone, Nick Devon</artist>
 			<remixArtist>none</remixArtist>
@@ -93,5 +49,12 @@
 		</x2715>
 	
 	</tracks>
+
+	<playlists>
+		<Favorites>
+			<track>x2714</track>
+			<track>x2715</track>
+		</Favorites>
+	</playlists>
 
 </tracklist>

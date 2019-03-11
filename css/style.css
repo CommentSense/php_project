@@ -21,10 +21,12 @@ input[type='checkbox']:checked {
   width: 100%;
   height: 100%;
   grid-template-areas: "image text chekbox";
-  grid-template-columns: 120px 420px 60px;
-  grid-template-rows: 120px;
+  grid-template-columns: 100px 440px 60px;
+  grid-template-rows: 100px;
   background: #ccc;
   justify-content: center;
+  margin: auto;
+  max-width: 600px
 }
 .container > div {
   border: 1.5px solid #000;
@@ -45,8 +47,8 @@ input[type='checkbox']:checked {
   height: 100%;
   grid-template-areas: "song"
   "comment";
-  grid-template-columns: 420px;
-  grid-template-rows: 78px 38px;
+  grid-template-columns: 440px;
+  grid-template-rows: 58px 38px;
   justify-content: center;
 }
 .container2 > div {
@@ -56,7 +58,7 @@ input[type='checkbox']:checked {
 .centerItem{
 	text-align: center;
 	vertical-align: middle;
-	line-height: 120px;
+	line-height: 100px;
 }
 
 .song {
@@ -92,6 +94,30 @@ input[type='checkbox']:checked {
   grid-area: chekbox;
   text-align: center;
   vertical-align: middle;
+}
+/*grid for playlists----------------------------------*/
+.containerPlaylist {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-areas: "playlist";
+  grid-template-columns: 420px;
+  grid-template-rows: 30px;
+  justify-content: center;
+  background: #ccc;
+  margin: auto;
+  max-width: 420px
+  
+}
+.containerPlaylist > div {
+  border: 1px dashed #888;
+}
+
+.playlist {
+  grid-area: playlist;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 30px;
 }
 
 /*navigation bar http://css-snippets.com/simple-horizontal-navigation/*/

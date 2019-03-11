@@ -50,7 +50,10 @@ class Library{
 		}
 	}
 	/*
-		Function that displays the entire library in html
+		This fuction displays the user's tracks. The string that is echoed
+		is formated in html that way we can display it and style it in css.
+		The keys for each track are stored in the html itself so when the
+		form is posted the keys are passed onto the html 'selected[]' array
 	*/
 	function displayLibrary(){
 		$tracks = $this->library['tracks'];
@@ -59,7 +62,7 @@ class Library{
 
 			echo 	"<div class=\"container\">".
 						"<div class=image>".
-				 			"<img src=\"$artwork\" width=\"120\" height=\"116\">".
+				 			"<img src=\"$artwork\" width=\"100\" height=\"96\">".
 				 		"</div>".
 				 		"<div class=text>".
 

@@ -2,22 +2,22 @@
 <Users>
 
 	<dimple>
-		<path>xml/tracks/user01.xml</path>
+		<path>xml/tracks/dimple.xml</path>
 		<image>images/user/dimple.jpg</image>
 	</dimple>
 
 	<asta>
-		<path>xml/tracks/user01.xml</path>
+		<path>xml/tracks/asta.xml</path>
 		<image>images/user/asta.jpg</image>
 	</asta>
 
 	<midoriya>
-		<path>xml/tracks/user02.xml</path>
+		<path>xml/tracks/midoriya.xml</path>
 		<image>images/user/midoriya.jpg</image>
 	</midoriya>	
 
 	<chika>
-		<path>xml/tracks/user02.xml</path>
+		<path>xml/tracks/chika.xml</path>
 		<image>images/user/chika.jpg</image>
 	</chika>
 </Users>

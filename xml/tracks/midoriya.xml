@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<tracklist>
+	<currestPlaylist>Favorites</currestPlaylist>
+	
+	<tracks>
+		
+		<x2705>
+			<artist>EarthLife</artist>
+			<remixArtist>none</remixArtist>
+			<title>Frames Of Berlin (Original Mix)</title>
+			<release>Timeless To Mountain</release>
+			<label>Dear Deer Black</label>
+			<style>Melodic Techno</style>
+			<comment>Melodic Techno</comment>
+			<albumArtwork>images/release_artwork/timeless-to-mountain.jpg</albumArtwork>
+		</x2705>
+		
+		<x2706>
+			<artist>Mihølnir</artist>
+			<remixArtist>none</remixArtist>
+			<title>Delysid (Original Mix) </title>
+			<release>No Time for Caution</release>
+			<label>Uxoa Dutxa Elite</label>
+			<style>Melodic Techno</style>
+			<comment>Melodic Techno</comment>
+			<albumArtwork>images/release_artwork/no-time-for-caution.jpg</albumArtwork>
+		</x2706>
+		
+		<x2707>
+			<artist>Strinner</artist>
+			<remixArtist>none</remixArtist>
+			<title>Deviation (Original Mix)</title>
+			<release>Deviation</release>
+			<label>Steyoyoke</label>
+			<style>Techno</style>
+			<comment>Techno</comment>
+			<albumArtwork>images/release_artwork/deviation.jpg</albumArtwork>
+		</x2707>
+	
+	</tracks>
+
+	<playlists>
+		<Favorites>
+			<track>x2706</track>
+			<track>x2707</track>
+		</Favorites>
+	</playlists>
+
+
+</tracklist>
