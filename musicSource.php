@@ -15,12 +15,6 @@
 		$veatportClass = "class=\"active\"";
 		$_SESSION['currentLibrary'] = $_SESSION['veatport'];
 	}
-
-	// if(isset($_POST["submitUser"])){
-	// 	$userPath = $_POST["userPath"];
-	// 	$user = new User($userPath);
-	// 	$_SESSION["user"] = $user;
-	// }
 ?>
 
 <!DOCTYPE html>
@@ -32,7 +26,7 @@
 <header>
    <div class="nav">
      <ul>
-       <li class="home"><a href="home.php">Home</a></li>
+       <li class="My Music"><a href="home.php">My Music</a></li>
        <li class="zoundlcoud"><a <?php echo $zoundlcoudClass?> href="musicSource.php?load=Z">Zoundcloud</a></li>
        <li class="veatport"><a <?php echo $veatportClass?> href="musicSource.php?load=V">Veatport</a></li>
        <li class="changeUser"><a href="index.php">Change User</a></li>
@@ -45,7 +39,7 @@
 	<form name="tracklist" method="post" action="home.php">
 		
 		<?php
-
+			//Displays the songs available in the current library selected
 			$_SESSION['currentLibrary']->displayLibrary();
 		?>
 		<input type="submit" name="addTracks" value="Add Tracks">

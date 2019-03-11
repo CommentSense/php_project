@@ -1,3 +1,7 @@
+html {
+  text-align: center;
+}
+
 input[type='checkbox'] {
     -webkit-appearance:none;
     width:30px;
@@ -10,10 +14,8 @@ input[type='checkbox']:checked {
     background: #888;
 }
 
-/*grid for tracks*/
-html {
-  text-align: center;
-}
+/*grid for tracks----------------------------------*/
+
 .container {
   display: grid;
   width: 100%;
@@ -22,6 +24,7 @@ html {
   grid-template-columns: 120px 420px 60px;
   grid-template-rows: 120px;
   background: #ccc;
+  justify-content: center;
 }
 .container > div {
   border: 1.5px solid #000;
@@ -44,6 +47,7 @@ html {
   "comment";
   grid-template-columns: 420px;
   grid-template-rows: 78px 38px;
+  justify-content: center;
 }
 .container2 > div {
   border: 1px dashed #888;
@@ -61,13 +65,43 @@ html {
 .comment {
   grid-area: comment;
 }
+
+/*grid for users----------------------------------*/
+.containerUser {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-areas: "image chekbox";
+  grid-template-columns: 120px 80px;
+  grid-template-rows: 120px;
+  justify-content: center;
+  background: #ccc;
+  margin: auto;
+  max-width: 200px
+
+
+}
+.containerUser > div {
+ border: 1.5px solid #000;
+}
+
+.image {
+  grid-area: image;
+}
+.chekbox {
+  grid-area: chekbox;
+  text-align: center;
+  vertical-align: middle;
+}
+
 /*navigation bar http://css-snippets.com/simple-horizontal-navigation/*/
+
 body {
   	margin: 0;
   	padding: 0;
   	max-width: 600px;
    	margin: auto;
-  	background: #fff;
+  	background: #000;
 }
 
 .nav ul {

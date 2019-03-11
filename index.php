@@ -51,9 +51,24 @@
 		// print_r($users);
 		foreach ($users as $key => $user) {
 			$path = $user['path'];
-			echo "<input type='radio' name=\"userPath\" value=\"$path\">$key<br>";
+			$image = $user['image'];
 
+			// echo "<input type='radio' name=\"userPath\" value=\"$path\">$key<br>";
 
+			echo 	"<div class=\"containerUser\">".
+						"<div class=image>".
+				 			"<img src=\"$image\" width=\"120\" height=\"116\">".
+				 		"</div>".
+				 		
+				 		"<div class=checkbox>".
+				 			"<br>".
+				 			"<input type='radio' name=\"userPath\" value=\"$path\"><br>".
+				 			"<p>$key</p><br>".
+				 		"</div>".
+				 	"</div><br>";
 		}
+
+
 	}
+	
 ?>

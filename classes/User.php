@@ -47,14 +47,31 @@ class User{
 
 	}
 	/*
-		This fuction displays the user's tracks 
+		Add comment to user's track
+		@param $key: key specific to track
+		@param $track: associative array containing track info
+	*/
+	function addComment($keys, $comment){
+		foreach ($keys as $key) {
+			$this->tracklist['tracks'][$key]['comment'] = $comment;
+		}
+	}
+	/*
+		This fuction displays the user's tracks. The string that is echoed
+		is formated in html that way we can display it and style it in css.
+		The keys for each track are stored in the html itself so when the
+		form is posted the keys are passed onto the html 'selected[]' array
 	*/
 	function displayTracks(){
+		//grab all the track from the libray
 		$tracks = $this->tracklist['tracks'];
 
 		foreach ($tracks as $key => $track) {
+			//grab the path to the tracks artwork
 			$artwork = $track['albumArtwork'];
 
+			//echo an html string that contains the information
+			//about the track, its keys, and how to format it
 			echo 	"<div class=\"container\">".
 						"<div class=image>".
 				 			"<img src=\"$artwork\" width=\"120\" height=\"116\">".

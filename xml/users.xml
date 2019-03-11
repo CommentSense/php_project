@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Users>
 
-	<user01>
+	<dimple>
 		<path>xml/tracks/user01.xml</path>
-	</user01>
+		<image>images/user/dimple.jpg</image>
+	</dimple>
 
-	<user02>
+	<asta>
+		<path>xml/tracks/user01.xml</path>
+		<image>images/user/asta.jpg</image>
+	</asta>
+
+	<midoriya>
 		<path>xml/tracks/user02.xml</path>
-	</user02>
-	
+		<image>images/user/midoriya.jpg</image>
+	</midoriya>	
+
+	<chika>
+		<path>xml/tracks/user02.xml</path>
+		<image>images/user/chika.jpg</image>
+	</chika>
 </Users>

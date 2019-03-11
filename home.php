@@ -21,7 +21,7 @@
 <header>
    <div class="nav">
      <ul>
-       <li class="home"><a class="active" href="#">Home</a></li>
+       <li class="My Music"><a class="active" href="#">My Music</a></li>
        <li class="zoundlcoud"><a href="musicSource.php?load=Z">Zoundcloud</a></li>
        <li class="veatport"><a href="musicSource.php?load=V">Veatport</a></li>
        <li class="changeUser"><a href="index.php">Change User</a></li>
@@ -34,22 +34,34 @@
 	<form name="tracklist" method="post">
 		
 		<?php
+			//Post to remove tracks selected by the user
 			if(isset($_POST["removeTracks"])){
+				//grab the keys of the selected tracks
 				$trackKeys = $_POST["selected"];
+				//remove tracks from user's tracklist
 				$_SESSION['user']->removeTracks($trackKeys);
 			}
-			if(isset($_POST["addTracks"])){
-				$trackKeys = $_POST["selected"];
 
+			//Post to add Track selected from musicSource.php
+			if(isset($_POST["addTracks"])){
+				//grab the keys of the selected tracks
+				$trackKeys = $_POST["selected"];
 				foreach ($trackKeys as $key) {
+					//get track information from the selected library
 					$track = $_SESSION['currentLibrary']->getTrack($key);
+					//add track to the user's tracklist
 					$_SESSION['user']->addTrack($key, $track);
 				}
 			}
 
 			$_SESSION['user']->displayTracks();
 		?>
-		<input type="submit" name="removeTracks" value="Remove Tracks">
+		<input type="submit" name="removeTracks" value="Remove Selected Tracks">
+		<br>
+		<p><font color="white">Add comment to selected tracks:</font></p>
+		<textarea cols="50" cols="2" name="comment"></textarea>
+		<br><br>
+		<input type="submit" name="addComment" value="Add Comment">
 	</form>
 
 </body>
