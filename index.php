@@ -25,13 +25,8 @@
 </head>
 <body>
 	<form name="user" method="post" action="myMusic.php">
-			
-			<?php
-				displayUsers($users);
-			?>
-
+			<?php displayUsers($users);?>
 			<input type="submit" name="submitUser" value="Select User">
-			
 	</form>
 
 </body>

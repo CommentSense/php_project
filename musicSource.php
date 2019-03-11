@@ -42,7 +42,6 @@
 
 <body>
 	<form name="tracklist" method="post" action="myMusic.php">
-		
 		<?php
 			//Displays the songs available in the current library selected
 			$_SESSION['currentLibrary']->displayLibrary();
